@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Nintendo Tavern</title>
+        <style>
+            #header-img{
+                width: 100px;
+                height: 100px;
+            }
+
+            .short-line{
+                width: 50%;
+                margin-left: 0;
+            }
+
+           img{
+                width: 80px;
+           }
+           
+           p{
+                font-size: 16px;
+           }
+
+           li{
+                display: inline;
+           }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img id="header-img" alt="Nintendo Pixel Logo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1d4567f-643b-403d-95a7-e66fc7ab1b22/dghomjr-e9e355ba-3304-464e-9480-c09c71b8b72b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxZDQ1NjdmLTY0M2ItNDAzZC05NWE3LWU2NmZjN2FiMWIyMlwvZGdob21qci1lOWUzNTViYS0zMzA0LTQ2NGUtOTQ4MC1jMDljNzFiOGI3MmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.TZ7fLCFq82D9YR4M6rdXTFV3oeEdurAfVRgmL5JLhws">
+            <h1>The Nintendo Tavern</h1>
+            <nav>
+                <ul>
+                    <a href="#menu"><li>Menu</li></a>
+                    <a href="#order-form"><li>Place your order</li></a>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+                <article>
+                    <img alt="Red Poison" src="https://art.pixilart.com/sr215bc5a53b0aws3.png" id="red-poison">
+                    <h3>Red Poison</h3>
+                    <p><i>Red fruits drink that revitalizes even the most tired trainer. $2.5</i></p>
+                    <br>
+                    <img alt="Lon Lon Milk" src="https://ih1.redbubble.net/image.935981394.7207/st,small,507x507-pad,600x600,f8f8f8.u1.jpg" id="lon-lon-milk">
+                    <h3>Lon Lon Milk</h3>
+                    <p><i>Cold, Creamy Milk from Hyrule's most famous farm. $3</i></p>
+                </article>
+                <hr class="short-line">
+                <article>
+                    <img alt="BBQ Bowser Burguer" src="https://img.freepik.com/premium-vektor/burger-pixel-art-icon-vintage-8-bit-80s-90s-games-computer-arcade-game-item-nostalgic_741683-240.jpg" id="burguer">
+                    <h3>BBQ Bowser Burguer</h3>
+                    <p><i>Juicy burguer with spicy BBQ sauce, as powerfull as the King of the Koopas!. $5</i></p>
+                    <br>
+                    <img alt="Metroid Burrito" src="https://ih1.redbubble.net/image.2790595045.7392/flat,750x,075,f-pad,750x1000,f8f8f8.webp" id="burrito">
+                    <h3>Metroid Burrito</h3>
+                    <p><i>Burrito wrapped like Samus, with meat, rice and alien hot sauce. $4</i></p>
+                </article>
+                <hr class="short-line">
+                <article>
+                    <img alt="Korok Brownies" src="https://media.istockphoto.com/id/1665587098/es/vector/pastel-de-brownie-pixel-art-retro-8-bit-style-sweet-pastry-chocolate-fudge-square-cake.jpg?s=170667a&w=0&k=20&c=XKnjM1lRDW398fXq1t8IMvy3bPQQ5D6nGmNW-zuDspA=" id="brownies">
+                    <h3>Korok Brownies</h3>
+                    <p><i>Chocolate brownies with walnuts and green leaves surprise. $1</i></p>
+                    <br>
+                    <img alt="Bananza Kong Split" src="https://ih1.redbubble.net/image.5048999443.8062/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" id="bananza-split">
+                    <h3>Bananza Kong Split</h3>
+                    <p><i>Classic Banana Split with ice cream, whipped cream and chocolate chips. $1.99</i></p>
+                </article>
+            </section>
+            <hr>
+            <section id="order-form">
+                <form action="">
+                    <h2>Place Your Order</h2>
+                    <label for="order-red-poison">Red Poison</label>
+                    <input type="number" min="0" id="order-red-poison">
+                    <br><br>
+                    <label for="order-lon-lon-milk">Lon Lon Milk</label>
+                    <input type="number" min="0" id="order-lon-lon-milk">
+                    <br><br>
+                    <label for="order-bbq-bowser-burguer">BBQ Bowser Burguer</label>
+                    <input type="number" min="0" id="order-bbq-bowser-burguer">
+                    <br><br>
+                    <label for="order-metroid-burrito">Metroid Burrito</label>
+                    <input type="number" min="0" id="order-metroid-burrito">
+                    <br><br>
+                    <label for="order-korok-brownies">Korok Brownies</label>
+                    <input type="number" min="0" id="order-korok-brownies">
+                    <br><br>
+                    <label for="order-bananza-kong-split">Bananza Kong Split</label>
+                    <input type="number" min="0" id="order-bananza-kong-split">
+                    <br><br>
+                    <h3>Extras:</h3>
+                    <input type="checkbox" id="fries">
+                    <label for="fries">Extra fries</label>
+                    <br><br>
+                    <input type="checkbox" id="cheese">
+                    <label for="cheese">Extra cheese</label>
+                    <br><br>
+                    <input type="checkbox" id="whipped-cream">
+                    <label for="whipped-cream">Extra whipped cream</label>
+                    <br><br>
+                    <input type="checkbox" id="sauce">
+                    <label for="sauce">Extra sauces</label>
+                    <br><br>
+                    <h3>Special Requests</h3>
+                    <textarea name="special-request" id="requests" placeholder="Any special request? Write it down here..." rows="10" cols="30"></textarea>
+                    <input type="submit" value="Go To Checkout" id="submit-btn">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Made with love by @Jnnn</p>
+        </footer>
+    </body>
+</html>   
