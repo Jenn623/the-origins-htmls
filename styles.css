@@ -1,0 +1,168 @@
+/*default settings*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2AF5CA;
+}
+
+/*special fonts*/
+.barriecito-regular {
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.funnel-display  .fun-display {
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*settings for the header*/
+header{
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    display: inline-block;
+    background-color: #F52A56;
+}
+
+/*settings for the unordered list in the nav*/
+.info-nav ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 40px;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.info-nav li{
+    font-size: 20px;
+}
+
+.info-nav button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #2AF564;
+    cursor: pointer;
+}
+
+/*settings for the two main sections*/
+.personal-section, #about-section #projects-section{
+    width: 100%;
+    height: 1000px;
+    border: 2px solid black;
+    position: relative;
+    /*top: 120px;*/
+}
+
+/*settings for the first section, about me*/
+.personal-section .personal-content{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    display: inline-block;
+    top: 40%;
+    /*left: 5%;*/
+    text-align: left;
+}
+
+.personal-content .name h1{
+    font-size: 100px;
+    margin-bottom: 5px;
+    padding-left: 5%;
+    font-family: 'Barriecito', system-ui;
+}
+
+.personal-content .name h4{
+    font-size: 30px;
+    padding-left: 5%;
+    font-family: 'Funnel Display', 'sans-serif';
+}
+
+.personal-content .description p{
+    font-size: 40px;
+    padding-left: 5%;
+    font-family: 'Funnel Display', 'sans-serif';
+}
+
+.personal-content .my-picture img{
+    position: relative;
+    /*padding-left: 70%;*/
+    transform: translate(300%, -75%);
+    border-radius: 50%;
+}
+
+/*settings for the second section, about my work*/
+.personal-section .work-content{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    display: inline-block;
+    /*top: 30%;*/
+    text-align: right;
+    /*right: 5%;*/
+    background-color: #F52A56;
+}
+
+.work-content .my-work h2{
+    padding-top: 20%;
+    font-size: 100px;
+    margin-bottom: 5px;
+    padding-right: 5%;
+    font-family: 'Barriecito', system-ui;
+}
+
+.work-content .work-descriptions p{
+    font-size: 40px;
+    margin-bottom: 5px;
+    padding-right: 5%;
+    font-family: 'Funnel Display', 'sans-serif';
+}
+
+.work-content .link-to-work p{
+    font-size: 20px;
+    padding-right: 5%;
+    font-family: 'Funnel Display', 'sans-serif';
+}
+
+/*settings for the footer section, ways to contact me*/
+footer{
+    width: 100%;
+    height: 220px;
+    position: relative;
+    background-color: #F5642A;
+    /*top: 40vh;*/
+}
+
+.my-contacts ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    padding-top: 5%;
+}
+
+.my-contacts li{
+    font-size: 20px;
+}
+
+.my-contacts button{
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #2ABBF5;
+    cursor: pointer;
+}
