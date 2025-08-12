@@ -6,7 +6,10 @@
 }
 
 body{
-    background-color: #2AF5CA;
+    position: relative;
+    /*background-color: #2AF5CA;*/
+    display: flex;
+    flex-direction: column;
 }
 
 /*special fonts*/
@@ -26,9 +29,10 @@ body{
 /*settings for the header*/
 header{
     width: 100%;
-    height: 120px;
-    position: absolute;
-    display: inline-block;
+    height: 10vh; /*120px fixed*/
+    position: relative; /*absolute*/
+    display: flex;
+    flex-direction: column;
     background-color: #F52A56;
 }
 
@@ -37,15 +41,16 @@ header{
     position: relative;
     display: flex;
     flex-direction: row;
-    top: 40px;
+    top: 3.2vh; /*40px fixed*/
     list-style: none;
     text-align: center;
     justify-content: center;
-    gap: 100px;
+    gap: 8%; /*100px fixed*/
 }
 
 .info-nav li{
-    font-size: 20px;
+    font-size: 2rem; /*20px fixed*/
+    font-family: 'Funnel Display';
 }
 
 .info-nav button{
@@ -54,115 +59,243 @@ header{
     border: none;
     background-color: #2AF564;
     cursor: pointer;
+    font-family: 'Funnel Display', 'sans-serif';
+    font-size: 20px;
 }
 
-/*settings for the two main sections*/
+.info-nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.info-nav button:hover{
+    background-color: #642AF5;
+    /*color: #fafafa;*/
+}
+
+.info-nav a:hover{
+    color: #fafafa;
+}
+
+/*settings for the two main sections
 .personal-section, #about-section #projects-section{
     width: 100%;
-    height: 1000px;
+    min-height: 10vh;
+    /*height: auto; /*1000px fixed
     border: 2px solid black;
     position: relative;
-    /*top: 120px;*/
-}
+    /*top: 120px;
+}*/
 
 /*settings for the first section, about me*/
 .personal-section .personal-content{
     width: 100%;
-    height: 1000px;
-    position: relative;
-    display: inline-block;
-    top: 40%;
+    min-height: 10vh;
+    height: 80vh;/*AUTO, 1000 fixed*/
+    position: relative; /*relative*/
+    display: flex;/*inline-block*/
+    flex-direction: column;
+    background-color: #2AF5CA;
+    /*top: 25vh;/*40%*/
     /*left: 5%;*/
     text-align: left;
 }
 
+.personal-section .personal-content .name{
+    width: 75%;
+    margin-top: 10%; /*12vh*/
+}
+
 .personal-content .name h1{
-    font-size: 100px;
-    margin-bottom: 5px;
+    font-size: 6.5rem; /*100px*/
+    margin-bottom: 0.5vh; /*5px fixed*/
     padding-left: 5%;
     font-family: 'Barriecito', system-ui;
 }
 
 .personal-content .name h4{
-    font-size: 30px;
+    font-size: 1.8rem; /*30*/
     padding-left: 5%;
     font-family: 'Funnel Display', 'sans-serif';
 }
 
+.personal-content .description{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
 .personal-content .description p{
-    font-size: 40px;
+    font-size: 2.3rem; /*40px fixed*/
     padding-left: 5%;
     font-family: 'Funnel Display', 'sans-serif';
+}
+
+.personal-content .my-picture{
+    /*display: flex;*/
+    width: 25%;
+    align-self: flex-end;
+    transform: translateY(-90%);
 }
 
 .personal-content .my-picture img{
     position: relative;
     /*padding-left: 70%;*/
-    transform: translate(300%, -75%);
     border-radius: 50%;
+    border: 5px solid black;
 }
 
 /*settings for the second section, about my work*/
 .personal-section .work-content{
     width: 100%;
-    height: 1000px;
+    min-height: 10vh;
+    height: 80vh;/*AUTO, 1000 fixed*/
     position: relative;
-    display: inline-block;
+    display: flex;/*inline-block*/
+    flex-direction: column;
     /*top: 30%;*/
     text-align: right;
     /*right: 5%;*/
-    background-color: #F52A56;
+    background-color: #F52ABB;
+}
+
+.personal-section .work-content .my-work{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 12%;
+    width: 75%;
+    align-self: flex-end; /*ACA NOS QUEDAMOSSSSSS*/
+    /*padding-right: 5%;*/
 }
 
 .work-content .my-work h2{
-    padding-top: 20%;
-    font-size: 100px;
-    margin-bottom: 5px;
+    /*padding-top: 20%;*/
+    font-size: 6.5rem; /*100px fixed*/
+    margin-bottom: 0.5vh;/*5px fixed*/
     padding-right: 5%;
     font-family: 'Barriecito', system-ui;
+    text-align: end;
+}
+
+.work-content .work-descriptions{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-self: flex-end;
 }
 
 .work-content .work-descriptions p{
-    font-size: 40px;
-    margin-bottom: 5px;
+    font-size: 2.3rem;/*40px fixed*/
+    margin-bottom: 0.5vh; /*5px fixed*/
     padding-right: 5%;
     font-family: 'Funnel Display', 'sans-serif';
 }
 
+.work-content .link-to-work{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
 .work-content .link-to-work p{
-    font-size: 20px;
+    font-size: 1.5rem; /*20px fixed*/
     padding-right: 5%;
     font-family: 'Funnel Display', 'sans-serif';
+}
+
+.work-content .work-pics{
+    display: flex;
+    width: 50%;
+    align-self: flex-start;
+    transform: translateY(-90%);
+    padding-left: 3%
+    /*justify-items:start;*/
+}
+
+.work-content .work-pics #pict-1{
+    position: relative;
+    width: 50%;
+    /*transform: translate(-170%, -80%);*/
+    border-radius: 20px;
+    border: 2px solid black;
 }
 
 /*settings for the footer section, ways to contact me*/
 footer{
     width: 100%;
-    height: 220px;
+    /*max-height: 18vh; /*220px fixed*/
     position: relative;
     background-color: #F5642A;
+    display: flex;
+    flex-direction: column;
     /*top: 40vh;*/
+}
+
+.my-contacts h2{
+    font-family: 'Barriecito', system-ui;
+    font-size: 3rem; /*50px fixed*/
+    padding-left: 5%;
+    margin-top: 3%; /**/
+    text-align: left;
+}
+
+.my-contacts p{
+    font-family: 'Funnel Display';
+    font-size: 1.8rem; /*30px fixed*/
+    padding-left: 5%;
 }
 
 .my-contacts ul{
     position: relative;
     display: flex;
     flex-direction: row;
-    gap: 70px;
+    gap: 40%; /*100px fixed*/
     text-align: center;
     justify-content: center;
     list-style: none;
-    padding-top: 5%;
+    /*margin-top: 10px;*/
+    /*transform: translateY(-100%);
+    padding-left: 50%;*/
 }
 
 .my-contacts li{
-    font-size: 20px;
+    font-size: 1.5rem; /*20px fixed*/
 }
 
 .my-contacts button{
-    padding: 15px;
-    border-radius: 20px;
+    padding: 20px; 
+    border-radius: 50%;
     border: none;
     background-color: #2ABBF5;
     cursor: pointer;
+    width: 100px;
 }
+
+.my-contacts button:hover{
+    background-color: #F5C92A;
+}
+
+.my-contacts li a{
+    text-decoration: none;
+    color: black;
+}
+
+.my-contacts img{
+    width: 90%;
+}
+
+.my-contacts li > p{
+    font-size: 1.5rem; /*20px fixed*/
+}
+
+.my-contacts .contact-icons{
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-self: flex-end;
+    padding-right: 5%;
+    transform: translateY(-90%);
+}
+
+/*TERMINARRRRRRRRR*/
