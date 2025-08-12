@@ -7,7 +7,6 @@
 
 body{
     position: relative;
-    /*background-color: #2AF5CA;*/
     display: flex;
     flex-direction: column;
 }
@@ -29,8 +28,8 @@ body{
 /*settings for the header*/
 header{
     width: 100%;
-    height: 10vh; /*120px fixed*/
-    position: relative; /*absolute*/
+    height: 10vh; 
+    position: relative; 
     display: flex;
     flex-direction: column;
     background-color: #F52A56;
@@ -41,15 +40,15 @@ header{
     position: relative;
     display: flex;
     flex-direction: row;
-    top: 3.2vh; /*40px fixed*/
+    top: 3.2vh; 
     list-style: none;
     text-align: center;
     justify-content: center;
-    gap: 8%; /*100px fixed*/
+    gap: 8%; 
 }
 
 .info-nav li{
-    font-size: 2rem; /*20px fixed*/
+    font-size: 2rem; 
     font-family: 'Funnel Display';
 }
 
@@ -77,44 +76,33 @@ header{
     color: #fafafa;
 }
 
-/*settings for the two main sections
-.personal-section, #about-section #projects-section{
-    width: 100%;
-    min-height: 10vh;
-    /*height: auto; /*1000px fixed
-    border: 2px solid black;
-    position: relative;
-    /*top: 120px;
-}*/
-
 /*settings for the first section, about me*/
 .personal-section .personal-content{
     width: 100%;
     min-height: 10vh;
-    height: 80vh;/*AUTO, 1000 fixed*/
-    position: relative; /*relative*/
-    display: flex;/*inline-block*/
+    height: 80vh;
+    position: relative; 
+    display: flex;
     flex-direction: column;
     background-color: #2AF5CA;
-    /*top: 25vh;/*40%*/
-    /*left: 5%;*/
+
     text-align: left;
 }
 
 .personal-section .personal-content .name{
     width: 75%;
-    margin-top: 10%; /*12vh*/
+    margin-top: 10%;
 }
 
 .personal-content .name h1{
-    font-size: 6.5rem; /*100px*/
-    margin-bottom: 0.5vh; /*5px fixed*/
+    font-size: 6.5rem; 
+    margin-bottom: 0.5vh; 
     padding-left: 5%;
     font-family: 'Barriecito', system-ui;
 }
 
 .personal-content .name h4{
-    font-size: 1.8rem; /*30*/
+    font-size: 1.8rem; 
     padding-left: 5%;
     font-family: 'Funnel Display', 'sans-serif';
 }
@@ -126,13 +114,12 @@ header{
 }
 
 .personal-content .description p{
-    font-size: 2.3rem; /*40px fixed*/
+    font-size: 2.3rem; 
     padding-left: 5%;
     font-family: 'Funnel Display', 'sans-serif';
 }
 
 .personal-content .my-picture{
-    /*display: flex;*/
     width: 25%;
     align-self: flex-end;
     transform: translateY(-90%);
@@ -140,7 +127,6 @@ header{
 
 .personal-content .my-picture img{
     position: relative;
-    /*padding-left: 70%;*/
     border-radius: 50%;
     border: 5px solid black;
 }
@@ -149,13 +135,11 @@ header{
 .personal-section .work-content{
     width: 100%;
     min-height: 10vh;
-    height: 80vh;/*AUTO, 1000 fixed*/
+    height: 80vh;
     position: relative;
-    display: flex;/*inline-block*/
+    display: flex;
     flex-direction: column;
-    /*top: 30%;*/
     text-align: right;
-    /*right: 5%;*/
     background-color: #F52ABB;
 }
 
@@ -164,14 +148,12 @@ header{
     flex-direction: column-reverse;
     margin-top: 12%;
     width: 75%;
-    align-self: flex-end; /*ACA NOS QUEDAMOSSSSSS*/
-    /*padding-right: 5%;*/
+    align-self: flex-end; 
 }
 
 .work-content .my-work h2{
-    /*padding-top: 20%;*/
-    font-size: 6.5rem; /*100px fixed*/
-    margin-bottom: 0.5vh;/*5px fixed*/
+    font-size: 6.5rem; 
+    margin-bottom: 0.5vh;
     padding-right: 5%;
     font-family: 'Barriecito', system-ui;
     text-align: end;
@@ -185,8 +167,8 @@ header{
 }
 
 .work-content .work-descriptions p{
-    font-size: 2.3rem;/*40px fixed*/
-    margin-bottom: 0.5vh; /*5px fixed*/
+    font-size: 2.3rem;
+    margin-bottom: 0.5vh; 
     padding-right: 5%;
     font-family: 'Funnel Display', 'sans-serif';
 }
@@ -199,7 +181,7 @@ header{
 }
 
 .work-content .link-to-work p{
-    font-size: 1.5rem; /*20px fixed*/
+    font-size: 1.5rem; 
     padding-right: 5%;
     font-family: 'Funnel Display', 'sans-serif';
 }
@@ -210,13 +192,11 @@ header{
     align-self: flex-start;
     transform: translateY(-90%);
     padding-left: 3%
-    /*justify-items:start;*/
 }
 
 .work-content .work-pics #pict-1{
     position: relative;
     width: 50%;
-    /*transform: translate(-170%, -80%);*/
     border-radius: 20px;
     border: 2px solid black;
 }
@@ -224,25 +204,23 @@ header{
 /*settings for the footer section, ways to contact me*/
 footer{
     width: 100%;
-    /*max-height: 18vh; /*220px fixed*/
     position: relative;
     background-color: #F5642A;
     display: flex;
     flex-direction: column;
-    /*top: 40vh;*/
 }
 
 .my-contacts h2{
     font-family: 'Barriecito', system-ui;
-    font-size: 3rem; /*50px fixed*/
+    font-size: 3rem; 
     padding-left: 5%;
-    margin-top: 3%; /**/
+    margin-top: 3%; 
     text-align: left;
 }
 
 .my-contacts p{
     font-family: 'Funnel Display';
-    font-size: 1.8rem; /*30px fixed*/
+    font-size: 1.8rem; 
     padding-left: 5%;
 }
 
@@ -250,17 +228,14 @@ footer{
     position: relative;
     display: flex;
     flex-direction: row;
-    gap: 40%; /*100px fixed*/
+    gap: 40%; 
     text-align: center;
     justify-content: center;
     list-style: none;
-    /*margin-top: 10px;*/
-    /*transform: translateY(-100%);
-    padding-left: 50%;*/
 }
 
 .my-contacts li{
-    font-size: 1.5rem; /*20px fixed*/
+    font-size: 1.5rem;
 }
 
 .my-contacts button{
@@ -286,7 +261,7 @@ footer{
 }
 
 .my-contacts li > p{
-    font-size: 1.5rem; /*20px fixed*/
+    font-size: 1.5rem; 
 }
 
 .my-contacts .contact-icons{
@@ -297,5 +272,3 @@ footer{
     padding-right: 5%;
     transform: translateY(-90%);
 }
-
-/*TERMINARRRRRRRRR*/
